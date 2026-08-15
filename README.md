@@ -53,3 +53,14 @@ Once you have the final resume PDF, add it to `/files` and change the link to so
 - Resume now opens inside `resume.html` using the live Google Docs published embed.
 - The resume remains synced to the published Google Doc.
 - Media titles in All Articles use straight double quotation marks.
+
+## Live resume update
+- `resume.html` now renders the current Google Doc through its PDF export endpoint.
+- The source resume remains the same Google Doc.
+- Future edits to the Google Doc flow into later PDF exports without replacing a PDF in GitHub.
+- The Open live PDF link is included as a fallback if the embedded Google viewer is blocked by a browser.
+
+## Final resume behavior
+- The Resume link on the homepage opens the live, view-only Google Doc in a new tab.
+- There is no separate resume.html page.
+- Updating the source Google Doc keeps the same resume URL current.
