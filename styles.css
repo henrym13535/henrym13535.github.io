@@ -347,3 +347,42 @@ footer {
 @media (max-width: 650px) {
   .pitch-intro { grid-template-columns: 1fr; gap: 16px; }
 }
+
+/* Rolling Stone College Journalism Award */
+.award-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(440px, 1fr);
+  gap: 36px;
+  align-items: stretch;
+  margin-top: 30px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  background: linear-gradient(120deg, var(--panel), rgba(16,31,52,.38));
+}
+.award-copy { align-self: center; }
+.award-copy h2 {
+  margin: 8px 0 14px;
+  font-family: "Libre Franklin", Arial, sans-serif;
+  font-size: clamp(28px, 3.7vw, 45px);
+  line-height: 1.10;
+  letter-spacing: -.045em;
+}
+.award-copy p {
+  max-width: 690px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.62;
+}
+.award-copy .award-note { margin-top: 10px; }
+.award-links { display: flex; flex-wrap: wrap; gap: 12px 26px; margin-top: 22px; }
+.award-links a { color: var(--accent); font-size: 13px; border-bottom: 1px solid transparent; padding-bottom: 2px; }
+.award-links a:hover { color: var(--text); border-color: var(--text); }
+.award-image { display: flex; flex-direction: column; justify-content: center; border-left: 1px solid var(--line); padding-left: 24px; }
+.award-image img { display: block; width: 100%; height: auto; object-fit: contain; object-position: center; }
+.award-image span { margin-top: 9px; color: #68768b; font-size: 9px; letter-spacing: .03em; }
+@media (max-width: 800px) {
+  .award-feature { grid-template-columns: 1fr; gap: 24px; padding: 22px; }
+  .award-image { border-left: 0; border-top: 1px solid var(--line); padding: 22px 0 0; }
+  .award-image img { height: auto; }
+}
