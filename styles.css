@@ -386,3 +386,6 @@ footer {
   .award-image { border-left: 0; border-top: 1px solid var(--line); padding: 22px 0 0; }
   .award-image img { height: auto; }
 }
+
+/* Allow the expanded header links to wrap cleanly on narrow screens. */
+.site-header nav { align-items: center; flex-wrap: wrap; justify-content: flex-end; row-gap: 10px; }
